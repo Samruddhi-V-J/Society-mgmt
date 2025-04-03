@@ -1,0 +1,85 @@
+/* Full page layout */
+.admin-register {
+    display: flex;
+    height: 100vh;
+    width: 100%;
+  }
+  
+  /* Left image section */
+  .image-container {
+    width: 50%;
+    height: 100%;
+  }
+  
+  .image-container img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  
+  /* Right form section */
+  .form-container {
+    width: 50%;
+    background-color: #f7fafa;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    padding: 40px;
+  }
+  
+  /* Title on top left */
+  h2 {
+    position: absolute;
+    top: 30px;
+    left: 40px;
+    font-size: 22px;
+    font-weight: bold;
+    color: #004d99;
+  }
+  
+  /* Logo on top right */
+  .community-logo {
+    width: 70px;
+    position: absolute;
+    top: 20px;
+    right: 40px;
+  }
+  
+  /* Form styling */
+  form {
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    margin-top: 50px;
+  }
+  
+  /* Input fields */
+  input {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    font-size: 16px;
+    background-color: #ffffff;
+  }
+  
+  /* Register button */
+  button {
+    width: 100%;
+    padding: 12px;
+    background-color: #003366;
+    color: white;
+    font-size: 16px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+  }
+  
+  button:hover {
+    background-color: #002244;
+  }
+  

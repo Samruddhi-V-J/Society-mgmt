@@ -1,0 +1,147 @@
+/* Main container for login page */
+.Login_page {
+  display: flex;
+  width: 100%;
+  height: 100vh;
+  background-color: white;
+}
+
+/* Left section with an image */
+.apartment {
+  width: 50%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+  overflow: hidden;
+  position: relative;
+}
+
+.apartment img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* Logo inside the apartment section */
+.communitylogo {
+  width: 200px;
+  height: 250px;
+  object-fit: cover;
+  margin-bottom: 10px;
+}
+
+/* Right section - Login form */
+.login_form {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+  padding: 40px;
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+/* Main Login heading */
+.login_form h1 {
+  text-align: center;
+  color: black;
+  font-size: 28px;
+  font-weight: bold;
+  margin-bottom: 5px; /* Keep space minimal */
+}
+
+/* Subheading - Welcome back text */
+.login_form h2 {
+  text-align: center;
+  color: #0b7ca4;
+  font-size: 24px;
+  font-weight: 500;
+  font-weight: bold;
+  margin-top: 0px;
+  margin-bottom: 20px;
+  letter-spacing: 1px;
+}
+
+/* Labels for inputs */
+.login_form label {
+  font-size: 18px;
+  font-weight: 600;
+  color: black;
+  width: 100%;
+  margin-bottom: 10px;
+}
+
+/* Input fields */
+.login_form input {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid darkgray;
+  border-radius: 5px;
+  margin-bottom: 15px;
+  font-size: 16px;
+}
+
+/* Input focus effect */
+.login_form input:focus {
+  border-color: #2b3442;
+  outline: none;
+  box-shadow: 0px 0px 5px rgba(43, 52, 66, 0.5);
+  transition: border-color 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+/* Login Button */
+.login_form button {
+  width: 100%;
+  padding: 12px;
+  font-size: 16px;
+  font-weight: bold;
+  color: white;
+  background-color: dodgerblue;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background 0.3s ease-in-out;
+}
+
+.login_form button:hover {
+  background-color: #0358b3;
+}
+
+/* Error message */
+.error {
+  color: red;
+  font-size: 14px;
+  margin-top: 5px;
+}
+
+/* Responsive Styles */
+@media (max-width: 900px) {
+  .Login_page {
+    flex-direction: column;
+    align-items: center;
+    height: auto;
+  }
+
+  .apartment {
+    width: 100%;
+    justify-content: flex-start;
+  }
+
+  .apartment img {
+    height: 300px;
+  }
+
+  .login_form {
+    width: 100%;
+    padding: 20px;
+  }
+}

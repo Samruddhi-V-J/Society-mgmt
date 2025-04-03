@@ -1,0 +1,234 @@
+/* General Styling */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f4;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+  height: 100vh;
+  text-align: center;
+}
+
+/* Navbar Styling */
+.navbar {
+  width: 100%;
+  background-color: #007bff;
+  padding: 15px 20px;
+  color: white;
+  font-size: 20px;
+  font-weight: bold;
+  display: flex;
+  justify-content: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1000;
+}
+
+/* Calendar Container */
+.calendar-container {
+  background: white;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+  margin-top: 80px;
+  width: 90%;
+  max-width: 1200px;
+}
+
+/* FullCalendar Customization */
+.fc {
+  font-size: 16px;
+}
+.fc-toolbar-title {
+  font-size: 24px;
+}
+.fc-daygrid-day {
+  min-height: 80px;
+}
+
+/* Add Event Button */
+.add-event-btn {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 50px;
+  width: 60px;
+  height: 60px;
+  font-size: 24px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+  transition: background-color 0.3s ease;
+}
+
+.add-event-btn:hover {
+  background-color: #0056b3;
+}
+
+/* Modal Overlay */
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 999;
+}
+
+/* Modal Styling */
+.modal {
+  background: white;
+  padding: 25px;
+  border-radius: 10px;
+  width: 500px;
+  max-width: 95%;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%); /* Center the modal */
+}
+
+/* Close Button (X) */
+.close-button {
+  background: none;
+  border: none;
+  font-size: 22px;
+  color: red;
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.close-button:hover {
+  color: darkred;
+}
+
+/* Modal Content */
+.modal-content {
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+  gap: 10px; /* Spacing between elements */
+}
+
+/* Title Bar */
+.modal-content h2 {
+  text-align: center;
+  font-size: 24px;
+  color: #333;
+}
+
+/* Event Date */
+.modal-content .event-date {
+  font-size: 18px;
+  font-weight: bold;
+  color: #007bff;
+}
+
+/* Event Description */
+.modal-content .event-description {
+  font-size: 16px;
+  color: #555;
+}
+
+/* Event Image */
+.event-image {
+  width: 100%;
+  max-height: 200px;
+  object-fit: cover;
+  border-radius: 8px;
+  margin-top: 10px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Form Styling */
+.modal-content label {
+  font-weight: bold;
+  margin-top: 10px;
+}
+
+.modal-content input,
+.modal-content textarea {
+  width: 100%;
+  padding: 10px;
+  margin-top: 5px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 16px;
+}
+
+.modal-content textarea {
+  resize: vertical;
+}
+
+/* Buttons */
+.modal-buttons {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+
+.modal-content .submit-btn {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  padding: 12px 20px;
+  font-size: 16px;
+  border-radius: 5px;
+  cursor: pointer;
+  flex: 1;
+  margin-right: 10px;
+}
+
+.modal-content .close-btn {
+  background-color: #dc3545;
+  color: white;
+  border: none;
+  padding: 12px 20px;
+  font-size: 16px;
+  border-radius: 5px;
+  cursor: pointer;
+  flex: 1;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+  .calendar-container {
+    width: 95%;
+    padding: 15px;
+  }
+
+  .modal {
+    width: 90%;
+    padding: 20px;
+  }
+
+  .close-button {
+    font-size: 20px;
+  }
+
+  .add-event-btn {
+    width: 50px;
+    height: 50px;
+    font-size: 20px;
+  }
+}

@@ -1,0 +1,161 @@
+/* General Container Styling */
+.feedback-container {
+    max-width: 900px;
+    margin: 40px auto;
+    padding: 25px;
+    font-family: "Poppins", sans-serif;
+    background: #ffffff;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+/* Feedback Header */
+.feedback-container h2 {
+    text-align: center;
+    color: #023e8a;
+    margin-bottom: 25px;
+    font-size: 28px;
+    font-weight: 600;
+}
+
+/* Layout */
+.feedback-content {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* Event Card */
+.large-event-card {
+    flex: 1;
+    padding: 25px;
+    background: #f0f7ff;
+    border-radius: 12px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.08);
+}
+
+.large-event-image {
+    width: 100%;
+    height: auto;
+    max-height: 280px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+/* Input Fields */
+.feedback-input,
+.feedback-rating {
+    width: 100%;
+    padding: 12px;
+    margin: 12px 0;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    font-size: 15px;
+    transition: all 0.3s ease-in-out;
+}
+
+.feedback-input:focus,
+.feedback-rating:focus {
+    border-color: #1561dc;
+    box-shadow: 0 0 8px rgba(21, 97, 220, 0.2);
+}
+
+/* Submit Button */
+.feedback-button {
+    width: 100%;
+    padding: 14px;
+    margin-top: 12px;
+    background: #023e8a;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-size: 17px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background 0.3s ease-in-out, transform 0.1s ease-in-out;
+}
+
+.feedback-button:hover {
+    background: #0056b3;
+    transform: scale(1.02);
+}
+
+.feedback-button:active {
+    transform: scale(0.98);
+}
+
+/* Feedback List Section */
+.feedback-container h3 {
+    margin: 35px 0 15px;
+    color: #1561dc;
+    text-align: center;
+    font-size: 22px;
+    font-weight: 600;
+}
+
+.feedback-list {
+    list-style: none;
+    padding: 0;
+}
+
+.feedback-list li {
+    background: #e9f5ff;
+    margin: 10px 0;
+    padding: 18px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.08);
+    font-size: 16px;
+    line-height: 1.5;
+}
+
+.feedback-list li strong {
+    color: #023e8a;
+    font-weight: bold;
+}
+
+/* Illustration Section */
+.illustration {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.illustration-image {
+    max-width: 90%;
+    max-height: 280px;
+    border-radius: 12px;
+    transition: transform 0.3s ease-in-out;
+}
+
+.illustration-image:hover {
+    transform: scale(1.05);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .feedback-content {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .large-event-card,
+    .illustration {
+        width: 100%;
+    }
+
+    .feedback-button {
+        font-size: 15px;
+    }
+
+    .feedback-container h2 {
+        font-size: 24px;
+    }
+
+    .feedback-container h3 {
+        font-size: 20px;
+    }
+}

@@ -1,0 +1,147 @@
+.Signup_page {
+  display: flex;
+  width: 100%;
+  height: 110vh;
+  background-color: white;
+}
+
+.apartment {
+  width: 50%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+  overflow: hidden;
+  position: relative;
+}
+
+.apartment img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; 
+}
+
+.communitylogo {
+  width: 200px;
+  height: 250px;
+  object-fit: cover;
+  margin-bottom: 10px;
+}
+
+.signup_form {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+  padding: 40px;
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.signup_form h1 {
+  text-align: center;
+  color: black;
+}
+
+.signup_form label {
+  font-size: 20px;
+  font-weight: 600;
+  color: black;
+  width: 100%;
+  margin-top: 5px; 
+}
+
+.signup_form .input-container {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  margin-bottom: 20px; 
+}
+
+.signup_form input,
+.signup_form select {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid darkgray;
+  border-radius: 5px;
+  font-size: 16px;
+  margin-bottom: 5px;
+}
+
+
+.signup_form input:focus,
+.signup_form select:focus {
+  border-color: #2b3442; 
+  outline: none; 
+  box-shadow: 0px 0px 5px rgba(43, 52, 66, 0.5); 
+  transition: border-color 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+
+.signup_form button {
+  width: 100%;
+  padding: 10px 25px;
+  font-size: 16px;
+  font-weight: bold;
+  color: white;
+  background-color: dodgerblue;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background 0.3s ease-in-out;
+}
+
+.signup_form button:hover {
+  background-color: #0358b3;
+}
+
+.error {
+  display: block;  
+  color: red;
+  font-size: 14px;
+  min-height: 20px; 
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+
+.auth-link {
+  color: dodgerblue;
+  cursor: pointer;
+  text-decoration: underline;
+  font-weight: bold;
+}
+
+.auth-link:hover {
+  color: #0358b3;
+}
+
+@media (max-width: 900px) {
+  .Signup_page {
+    flex-direction: column;
+    align-items: center;
+    height: auto;
+  }
+
+  .apartment {
+    width: 100%; 
+    justify-content: flex-start; 
+  }
+
+  .apartment img {
+    height: 300px; 
+  }
+
+  .signup_form {
+    width: 100%; 
+    padding: 20px;
+  }
+}

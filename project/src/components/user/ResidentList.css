@@ -1,0 +1,131 @@
+/* General Styles */
+.container {
+    padding: 20px;
+    background-color: #f5f7fa;
+    min-height: 100vh;
+    font-family: "Arial", sans-serif;
+}
+
+/* Navbar Styling */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: dark wheat;
+    color: black;
+    padding: 15px 25px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.navbar-title {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.navbar-icons {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.navbar-icons .icon {
+    font-size: 24px;
+    cursor: pointer;
+    transition: transform 0.2s ease-in-out;
+}
+
+.navbar-icons .icon:hover {
+    transform: scale(1.1);
+}
+
+.user-name {
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.block-buttons {
+    display: flex;
+    justify-content: center; /* Keep buttons in the same row */
+    align-items: center;
+    gap: 15px; /* Space between buttons */
+    margin: 40px 0 20px 0; /* Increased space above buttons */
+    text-align: center;
+    margin-top: 90px;
+    
+}
+
+.block-buttons button {
+    padding: 12px 25px;
+    border-radius: 25px;
+    border: none;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    background: white;
+    color: #002D62;
+    border: 2px solid #002D62;
+    transition: all 0.3s ease-in-out;
+    min-width: 290px; /* Ensures uniform button width */
+    text-align: center;
+}
+
+.block-buttons button:hover,
+.block-buttons button.active {
+    background: #002D62;
+    color: white;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2);
+}
+
+
+/* Resident Card Styling */
+
+.resident-container {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr); /* Exactly 5 cards in a row */
+    gap: 20px; /* Space between cards */
+    padding: 20px;
+    justify-content: center;
+    background: dark wheat;
+}
+
+.resident-card {
+    background: white;
+    border-radius: 12px;
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    width: 250px; /* Increased width */
+    height: 250px; /* Increased height */
+    text-align: left;
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+.resident-card:hover {
+    transform: scale(1.05);
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.15);
+}
+
+/* Resident Description */
+.resident-description {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    font-size: 16px;
+}
+
+.resident-description h3 {
+    font-size: 20px;
+    font-weight: bold;
+    color: #002D62;
+    margin-bottom: 10px;
+}
+
+/* Icon Styling */
+.resident-info {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 15px;
+    color: #555;
+}
